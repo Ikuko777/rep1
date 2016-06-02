@@ -36,7 +36,7 @@ int anagram (vector<char> &c,int j){
       e.assign(&d[0],&d[l+1]);
       sort(&d[0],&d[l+1]);
    
-      if((j==l)&&(equal(&c[0],&c[l],&d[0]))){ 
+      if((j==l)&&(equal(&c[0],&c[l+1],&d[0]))){ 
 	for(k=0;k<l+1;k++){
 	  printf("%c",e[k]);
 	} 
